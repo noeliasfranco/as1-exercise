@@ -1,0 +1,22 @@
+<div class="col-md-3">
+    <b><%= orderNumber %></b>
+</div>
+<div class="col-md-3 vehicle-data">
+    <a href="javascript:void(0)" class="inspectionDetails" data-id=<%=_id%> title="Click to see inspection order details"><%= vehicle.year%>  <%= vehicle.make%>   <%= vehicle.model%> </a>
+</div>
+<div class="col-md-4">
+    
+       <% if(inspectionType==="0") { %>
+            <button class="secondary-button" type="button"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Vehicle 360 Inspection <span class="glyphicon glyphicon-remove pull-right close"></span></button>
+        <% } %>
+            
+            <% if(inspectionType==="1") { %>
+            <button class="secondary-button" type="button"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Detailed Inspection <span class="glyphicon glyphicon-remove pull-right close"></span></button>
+        <% } %>
+            
+            
+            <% if(inspectionType==="2") { %>
+            <button class="secondary-button" type="button"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Quick Photos Inspection <span class="glyphicon glyphicon-remove pull-right close"></span></button>
+        <% } %>
+</div>
+        

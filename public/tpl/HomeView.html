@@ -1,0 +1,57 @@
+<div class="dashboard">
+    <div class="input-group stylish-input-group col-md-6">
+        <input type="text" class="form-control search-inspection" placeholder="Search here...">    
+    </div>
+    <button class="primary-button newInspection" type="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Inspection & Report</button>
+</div>
+<div>
+    <h2>Dashboard</h2>
+    <p class="total-vehicles">Viewing: <span class="vehicle-total"></span></p>
+</div>
+<div id="inspectionList">
+</div>
+<div class="app"></div>
+<script type="text/template" id="modal-template">
+    <div class="bbm-modal__topbar">
+      <h3 class="bbm-modal__title">New Inspection & Report</h3>
+    </div>
+   
+    <div class="bbm-modal__section">
+        <div class="alert alert-warning fade in hidden">
+            <a href="javascript:void(0);" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+            Please complete the required fields
+        </div>
+        <form class="inspection-form" role="form">
+            <fieldset class="form-group">
+                <label for="year">Year *</label>
+                <select class="form-control" id="year"></select>
+                <span class="year error"></span>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="make">Marke *</label>
+                <input type="text" class="form-control" id="make" placeholder="Enter marke" required>
+                <span class="make error"></span>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="model">Model *</label>
+                <input type="text" class="form-control" id="model" placeholder="Enter model" required>
+                <span class="model error"></span>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="inspectionType">Inspection Type *</label>
+                <select class="form-control" id="inspectionType">            
+                </select>
+                <span class="inspectionType error"></span>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="note">Notes</label>
+                <textarea class="form-control" id="note" rows="3"></textarea>
+                <span class="note error"></span>
+            </fieldset>
+        </form>
+    </div>
+    <div class="bbm-modal__bottombar">
+      <button type="button" class="btn btn-default cancel">Cancel</button>
+      <button type="button" class="btn btn-primary create">Create</button>
+    </div>
+  </script>

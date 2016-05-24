@@ -1,0 +1,144 @@
+body {
+    background: #2E3947;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+button,
+input {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2,
+p {
+    color: white;
+}
+
+a:hover {
+    color: rgb(33, 127, 212);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+legend {
+    font-family: 'Andika';
+}
+
+.status-bar {
+    height: 60px;
+}
+
+.footer {
+    background: #2E3947;
+    border-top: solid 1px #ddd;
+    bottom: 0;
+    color: white;
+    height: 30px;
+    padding-top: 0.5%;
+    position: fixed;
+    width: 100%;
+}
+
+.header {
+    height: 60px;
+}
+
+.header .brand {
+    width: 18%;
+}
+
+.thumbnail {
+    min-width: 260px;
+}
+
+.thumbnails li {
+    margin-left: 0px !important;
+    margin-right: 20px !important;
+}
+
+.dashboard {
+    color: white;
+    font-family: "Andika";
+    height: 100%;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.gradient {
+    /* can be treated like a fallback */
+    background-color: #778DAE;
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient(#778DAE, #4B586C);
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: #778DAE;
+    background: linear-gradient(#778DAE, #4B586C);
+}
+
+.pull-center {
+    text-align: center;
+}
+
+.stylish-input-group {
+    float: left !important;
+    margin-right: 2%;
+}
+
+.stylish-input-group input[type="text"] {
+    background: none;
+    border: 2px solid #2E6699;
+    border-radius: 4px !important;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-left: 4%; 
+}
+
+.form-control::-webkit-input-placeholder {
+    color: lightgrey;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.primary-button {
+    /* will be "on top", if browser supports it */
+    background-image: -webkit-linear-gradient(#3881BA, #2C6797);
+    background-image: -o-linear-gradient(#3881BA, #2C6797);
+    background-image: linear-gradient(#3881BA, #2C6797);
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: #3881BA;
+    background: -webkit-linear-gradient(#3881BA, #2C6797);
+    background: -o-linear-gradient(#3881BA, #2C6797);
+    background: linear-gradient(#3881BA, #2C6797);
+    border-radius: 4px;
+    border: none;
+    background-color: #3881BA;
+    height: 34px;
+    padding: 0% 1%;
+}
+
+.secondary-button {
+    background: #E8E9EA;
+    border: none;
+    color: #217FCF;
+    font-weight: bold;
+    height: 40px;
+    text-align: left;
+    width: 100%;
+}
+
+.total-vehicles {
+    border-bottom: 1px solid white;
+    margin-top: 2%;
+    padding-bottom: 1%;
+}
+
+.inspection-container {
+    color: white;
+}
+
+.inspection-container .vehicle-data {
+    color: #49C0F0;
+}
+
+#inspectionList div {
+    margin-bottom: 2%;
+}
+
